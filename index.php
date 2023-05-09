@@ -1,11 +1,29 @@
 <?php 
 
-function addFive(int $number)
-{
-    $total = $number + 5;
-    return $total;
-}
+ function isPrime(int $number)
+ {
+    for ($i = 2; $i < $number; $i++) {
+        if ($number % $i == 0) {
+            return false;
+        }
+    }
+    
+    return true;
+ }
 
-echo addFive(12);
+ function viewPrime()
+ {
+    $count = 0;
+    $number = 2;
+
+    while ($count < 5) {
+        if (isPrime($number)) {
+            $count++;
+            echo $number . "<br/>";
+        } $number++;
+    } 
+ }
+
+ viewPrime();
 
 ?>
