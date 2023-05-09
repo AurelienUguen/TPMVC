@@ -1,22 +1,22 @@
 <?php 
 
-$age = 29;
+$age = -5;
 
-if ($age >= 18) {
+
+if ($age >= 18 && $age > 0) {
     echo "Je suis majeur";
-} elseif ($age < 18) {
+} elseif ($age < 18 && $age > 0) {
     echo "Je suis mineur";
 } else {
     echo "Vous n'êtes pas humain";
 }
 
-echo "<br/";
 
 switch ($age) {
-    case $age >= 18 :
+    case $age >= 18 && $age > 0:
         echo "Je suis majeur";
     break;
-    case $age < 18: 
+    case $age < 18 && $age > 0: 
         echo "Je suis mineur";
     break;
     default:
