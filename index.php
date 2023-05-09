@@ -3,7 +3,7 @@
 $age = -5;
 
 
-if ($age >= 18 && $age > 0) {
+if ($age >= 18) {
     echo "Je suis majeur";
 } elseif ($age < 18 && $age > 0) {
     echo "Je suis mineur";
@@ -11,9 +11,8 @@ if ($age >= 18 && $age > 0) {
     echo "Vous n'êtes pas humain";
 }
 
-
 switch ($age) {
-    case $age >= 18 && $age > 0:
+    case $age >= 18:
         echo "Je suis majeur";
     break;
     case $age < 18 && $age > 0: 
