@@ -1,5 +1,10 @@
 <?php 
 
-echo rand(5, 25);
+function myFirstFunction()
+{
+    echo "C'est ma première fonction, et ça marche!";
+}
+
+myFirstFunction();
 
 ?>
