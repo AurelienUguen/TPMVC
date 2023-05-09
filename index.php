@@ -1,10 +1,11 @@
 <?php 
 
-function myFirstFunction()
+function addFive(int $number)
 {
-    echo "C'est ma première fonction, et ça marche!";
+    $total = $number + 5;
+    return $total;
 }
 
-myFirstFunction();
+echo addFive(12);
 
 ?>
