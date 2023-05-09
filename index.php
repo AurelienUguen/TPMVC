@@ -1,6 +1,6 @@
 <?php
 
-echo "Hello World";
+$animes = ["Jojo's Bizarre Adventure", "Death Note", "My Hero Academia", "Akira", "Dragon Ball"];
 
 ?>
 
@@ -11,20 +11,10 @@ echo "Hello World";
         </tr>
     </thead>
     <tbody>
+        <?php foreach ($animes as $anime) { ?>
         <tr>
-            <td>Jojo's Bizzare Adventure</td>
+            <td><?php echo $anime?></td>
         </tr>
-        <tr>
-            <td>Death Note</td>
-        </tr>
-        <tr>
-            <td>My Hero Academdia</td>
-        </tr>
-        <tr>
-            <td>Akira</td>
-        </tr>
-        <tr>
-            <td>Dragon Ball</td>
-        </tr>
+        <?php } ?>
     </tbody>
 </table>
