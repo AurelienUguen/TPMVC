@@ -1,9 +1,13 @@
 <?php 
 
-$i = 1;
+$age = 29;
 
-while ($i <= 50) {
-    echo $i++ . "<br/>";
+if ($age >= 18) {
+    echo "Je suis majeur";
+} elseif ($age < 18) {
+    echo "Je suis mineur";
+} else {
+    echo "Vous n'êtes pas humain";
 }
 
 ?>
