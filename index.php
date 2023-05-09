@@ -1,29 +1,14 @@
 <?php 
 
- function isPrime(int $number)
- {
-    for ($i = 2; $i < $number; $i++) {
-        if ($number % $i == 0) {
-            return false;
-        }
+function writeNumber(int $number)
+{
+    for ($i = 1; $i <= $number; $i++) {
+        echo "<br/>";
+        for ($j = 0; $j < $i; $j++)
+        echo $i;
     }
-    
-    return true;
- }
+}
 
- function viewPrime()
- {
-    $count = 0;
-    $number = 2;
-
-    while ($count < 5) {
-        if (isPrime($number)) {
-            $count++;
-            echo $number . "<br/>";
-        } $number++;
-    } 
- }
-
- viewPrime();
+echo writeNumber(9);
 
 ?>
